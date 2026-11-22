@@ -1,0 +1,14 @@
+### Ayşe geldi olsun (hak düşmeli)
+PATCH http://localhost:3000/katilimlar/1/durum
+Content-Type: application/json
+
+{ "durum": "geldi" }
+
+### Ayşe gelmedi olsun (hak iade edilmeli)
+PATCH http://localhost:3000/katilimlar/1/durum
+Content-Type: application/json
+
+{ "durum": "gelmedi" }
+
+### 24 Kasım dersinin katılımcıları
+GET http://localhost:3000/oturumlar/1

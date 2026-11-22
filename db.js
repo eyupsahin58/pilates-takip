@@ -35,6 +35,7 @@ CREATE TABLE IF NOT EXISTS katilim (
   musteri_id INTEGER NOT NULL REFERENCES musteri(id),
   durum TEXT NOT NULL DEFAULT 'kayitli'
     CHECK (durum IN ('kayitli', 'geldi', 'gelmedi', 'iptal')),
+  paket_id INTEGER REFERENCES paket(id),
   UNIQUE (oturum_id, musteri_id)
 );
 `);
