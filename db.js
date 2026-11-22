@@ -7,6 +7,8 @@ CREATE TABLE IF NOT EXISTS musteri (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   ad TEXT NOT NULL,
   telefon TEXT,
+  uyelik_turu TEXT NOT NULL DEFAULT 'normal'
+    CHECK (uyelik_turu IN ('normal', 'multisport', 'deneme')),
   not_metni TEXT
 );
 
