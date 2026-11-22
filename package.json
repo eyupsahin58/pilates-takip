@@ -1,0 +1,24 @@
+{
+  "name": "pilates-takip",
+  "version": "1.0.0",
+  "description": "Grup pilates dersleri (en fazla 5 kişilik) için seans ve paket takip uygulaması.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eyupsahin58/pilates-takip.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/eyupsahin58/pilates-takip/issues"
+  },
+  "homepage": "https://github.com/eyupsahin58/pilates-takip#readme",
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}
