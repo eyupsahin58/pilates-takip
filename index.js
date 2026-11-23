@@ -5,6 +5,7 @@ const app = express();
 const PORT = 3000;
 
 app.use(express.json());
+app.use(express.static('public'));    
 
 const UYELIK_TURLERI = ['normal', 'multisport', 'deneme'];
 const DURUMLAR = ['kayitli', 'geldi', 'gelmedi', 'iptal'];
@@ -44,9 +45,6 @@ function doluSayisi(oturumId, haricKatilimId = null) {
 
 // ---------- Genel ----------
 
-app.get('/', (req, res) => {
-  res.send('Merhaba! Pilates takip sunucusu çalışıyor.');
-});
 
 // ---------- Müşteriler ----------
 
